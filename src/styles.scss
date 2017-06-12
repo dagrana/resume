@@ -1,0 +1,43 @@
+@import '~@angular/material/theming';
+@import './app-theme';
+@import './styles/globals';
+@import './styles/responsive';
+
+
+// Include material core styles.
+@include mat-core();
+
+
+// Define material light theme.
+$primary: mat-palette($mat-blue);
+$accent:  mat-palette($mat-amber, A200, A100, A400);
+
+$theme: mat-light-theme($primary, $accent);
+@include angular-material-theme($theme);
+@include cv-app-theme($theme);
+
+body {
+  font-family: "Noto Sans","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  margin: 0;
+  color: $fg_color;
+}
+
+
+section{
+  width: 100%;
+}
+
+app-navbar{
+  margin: 0 auto;
+}
+
+.cv-section {
+   
+  .mat-card{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: $fg_color;
+    box-sizing: border-box;
+  }
+
+}

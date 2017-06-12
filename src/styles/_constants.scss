@@ -1,0 +1,48 @@
+/* **************************** */
+/* Responsive constants */
+/* **************************** */
+
+$small-breakpoint-width: 840px;
+
+$retina-devices-breakpoint-width: 320px;
+$extra-small-devices-breakpoint-width: 480px;
+$small-devices-breakpoint-width: 768px;
+$medium-devices-breakpoint-width: 992px;
+$large-devices-breakpoint-width: 1200px;
+
+
+/* **************************** */
+/* Snippets */
+/* **************************** */
+.ml-auto {
+	margin-left:auto!important;
+}
+.mr-auto {
+	margin-right:auto!important;
+}
+.mlr-auto {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.no-float {
+  float: none !important;
+}
+
+.clearfix{
+	overflow:hidden;
+	clear:both;
+	float:none;
+}
+
+.hide-overflow {
+	overflow:hidden;
+}
+
+.hide {
+	display:none;
+}
+
+.relative {
+	position:relative;
+}

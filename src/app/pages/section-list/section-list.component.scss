@@ -1,0 +1,35 @@
+@import '../../../styles/constants';
+
+.cv-section-list {
+  padding: 0px;
+  margin-bottom: 100px;
+}
+
+.cv-section-list-card {
+  display: inline-block;
+  width: 260px;
+  margin: 20px;
+  vertical-align: top;
+  cursor: pointer;
+
+  .mat-card-title {
+    font-size: 20px;
+  }
+}
+
+.cv-section-list-card-summary {
+  height: 2.4em;
+}
+
+.cv-section-list-header {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+    padding: 50px;
+  }
+}

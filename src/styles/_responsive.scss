@@ -1,0 +1,99 @@
+@import './constants';
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : $retina-devices-breakpoint-width) {
+    app-navbar{
+        width: 100%;
+        div{
+            display: none;
+        }
+    }
+    
+    .cv-section{
+        .mat-card{
+            width: 85%;
+        }
+    }
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : $extra-small-devices-breakpoint-width) {
+    .cv-section{
+        .mat-card{
+            width: 80%;
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : $small-devices-breakpoint-width) {
+    .cv-section{
+        .mat-card{
+            width: 80%;
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : $medium-devices-breakpoint-width) {
+    app-navbar{
+        width: 75%;
+        div{
+            display: initial;
+        }
+    }
+    .cv-section{
+        .mat-card{
+            width: 75%;
+        }
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : $large-devices-breakpoint-width) {
+     app-navbar{
+        width: 65%;
+        max-width: 1024px;
+        div{
+            display: initial;
+        }
+    }
+    .cv-section{
+        .mat-card{
+            width: 65%;
+            max-width: 1024px;
+        }
+    }
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : $large-devices-breakpoint-width) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : $medium-devices-breakpoint-width) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : $small-devices-breakpoint-width) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : $extra-small-devices-breakpoint-width) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : $retina-devices-breakpoint-width) {
+
+}

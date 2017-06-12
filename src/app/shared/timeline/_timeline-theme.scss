@@ -1,0 +1,13 @@
+@mixin timeline-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  app-timeline {
+    .timeline-badge{
+      color: mat-color($primary);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.top-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 16px;
+
+  > .mat-button {
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}

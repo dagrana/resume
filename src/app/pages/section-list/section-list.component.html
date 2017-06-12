@@ -1,0 +1,15 @@
+<div class="cv-section-list">
+  <section class="cv-section" [attr.id]="item.id"
+    *ngFor="let item of cvItems.getAllItems()">
+    <md-card class="___cv-section-list-card">
+      <md-card-title>{{item.name}}</md-card-title>
+      
+      <div [ngSwitch]="item.id">
+        <app-section-experience *ngSwitchCase="'experience'"></app-section-experience>
+        <app-section-education *ngSwitchCase="'education'"></app-section-education>
+      </div>
+
+      
+    </md-card>
+  </section>
+</div>

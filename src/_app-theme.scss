@@ -1,0 +1,34 @@
+@import '~@angular/material/theming';
+
+@import './app/shared/navbar/navbar-theme';
+@import './app/shared/timeline/timeline-theme';
+
+@import './app/pages/main-content/main-content-theme';
+@import './app/pages/section-list/section-list-theme';
+
+
+// Styles for the docs app that are based on the current theme.
+@mixin cv-app-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  .app-background {
+    background: mat-color($background, background);
+  }
+
+  .docs-footer {
+    background: mat-color($primary);
+    color: mat-color($primary, default-contrast);
+  }
+
+  @include nav-bar-theme($theme);
+//   @include home-page-theme($theme);
+  @include nav-bar-theme($theme);
+  @include timeline-theme($theme);
+  @include main-content-sidenav-theme($theme);
+  @include section-list-theme($theme);
+//   @include footer-theme($theme);
+}

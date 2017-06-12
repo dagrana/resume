@@ -1,0 +1,97 @@
+@import '../../../styles/constants';
+@import '../../../styles/globals';
+@import '../../../styles/functions';
+
+
+.section-header {
+//   display: flex;
+//   align-items: center;
+  margin-top: 40px;
+  
+  .card-about {
+	.candidate-img {
+		height: 230px;
+		width: 230px;
+		border-radius: 50%;
+		background: url('/assets/img/avatar.jpg');
+		background-size: cover;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+    .social-icons {
+		text-align:center;
+		li {
+			display:inline-block;
+			padding:0 7px;
+			a {
+				i {
+					color:$fg_color;
+					@include transition(.3s ease);
+				}
+				&.facebook-link {
+					&:hover {
+						i {
+							color: rgb(59,89,152);
+						}
+					}
+				}
+				&.twitter-link {
+					&:hover {
+						i {
+							color: rgb(85,172,238);
+						}
+					}
+				}
+				&.linkedin-link {
+					&:hover {
+						i {
+							color: rgb(0,123,182);
+						}	
+					}
+				}
+			}
+		}
+	}
+
+	.info-wrap {
+		margin-top: 30px;
+		h3 {
+			color: $fg_color;
+			margin-top: 20px;
+			font-weight:600;
+		}
+	}
+	.profile-wrap {
+		margin-top: 50px;
+		li {
+			margin-bottom:8px;
+			font-size: 16px;
+			&:last-child {
+				margin-bottom:0;
+			}
+			.profile-title,.profile-desc {
+				display:inline-block;
+			}
+			div {
+				&.profile-title {
+					width: 100px;
+					margin-right:20px;
+					text-transform:capitalize;
+					color:#444;
+				}
+			}
+		}
+	}
+
+	.profile-wrap li .profile-title,
+	.profile-wrap li .profile-desc {
+		display: inline-block;
+	}
+
+  }
+}
+
+
+
+

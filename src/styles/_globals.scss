@@ -1,0 +1,118 @@
+/****************************/
+/** Global settings **/
+/****************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym,address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html,body {
+	height:inherit;
+	width:inherit;
+	min-height:inherit;
+}
+strong{
+	font-weight:bold;
+}
+
+$fg_color: #848484 ;
+$font: 'Noto Sans', sans-serif;
+
+body {
+	color: $fg_color;
+	background:#e2e2e2;
+	font-family:$font;
+	font-size: 14px;
+	font-style: normal;
+	line-height:1.5;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+/* Mozilla based browsers */
+::-moz-selection {
+    background: #338fff;
+	color: #fff;
+	text-shadow: none;
+}
+
+/* Works in Safari */
+::selection {
+    background: #338fff;
+	color: #fff;
+	text-shadow: none;
+}
+a:hover,a:active {
+    outline: 0;
+}
+
+button:focus{
+	border:none;
+	outline:0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $fg_color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $fg_color;
+    text-decoration: none;
+}
+
+a:focus {
+ 	color: $fg_color;
+    text-decoration: none;
+    outline: none;
+}
+i:focus {
+	outline: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	color:#444;
+}
+h1{
+	font-size:42px;
+	line-height:42px;
+	text-transform:capitalize;
+}
+h2{
+	font-size:24px;
+	line-height:35px;
+	text-transform:capitalize;
+}
+h3{
+	font-size:20px;
+	line-height:30px;
+	text-transform:capitalize;
+}
+h4{
+	font-size:18px;
+	line-height:29px;
+	text-transform:capitalize;
+}
+h5{
+	font-size:16px;
+	line-height:25px;
+	font-weight:500;
+	text-transform:uppercase;
+}
+p{
+	font-size:15px;
+	line-height:25px;
+	&.lead {
+		font-size:18px;
+		line-height:30px;
+		font-weight:400;
+	}
+}
+.force-UTF-8{
+    content: "¡";
+}

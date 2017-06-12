@@ -1,0 +1,24 @@
+<nav class="top-navbar">
+  <a md-button>
+      <i class="material-icons menu-btn" (click)="sidenav.open()">menu</i>
+    </a>
+  <div fxLayout="row">
+
+
+    <span class="fill-remaining-space"></span>
+
+    <a md-button pageScroll [pageScrollInterruptible]="false" [pageScrollDuration]="1000" href="#about">
+      <span>About</span>
+    </a>
+
+    <a md-button pageScroll [pageScrollInterruptible]="false" [pageScrollDuration]="1000" href="#skills">
+      <span>Skills</span>
+    </a>
+    <a md-button pageScroll [pageScrollInterruptible]="false" [pageScrollDuration]="1000" href="#experience">
+      <span>Experience</span>
+    </a>
+    <a md-button pageScroll [pageScrollInterruptible]="false" [pageScrollDuration]="1000" href="#education">
+      <span>Education</span>
+    </a>
+  </div>
+</nav>
