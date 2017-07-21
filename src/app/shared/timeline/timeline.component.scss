@@ -1,4 +1,4 @@
-
+@import '../../../styles/constants';
 
 $color_1: #444;
 $color_3: #bababa;
@@ -147,4 +147,59 @@ $color_white:#fff;
 		}
 	}
   }
+}
+
+
+
+
+
+
+@media only screen and (max-width : $medium-devices-breakpoint-width) {
+	.timeline {
+		&:before {
+			left: 10%;
+		}
+		> li {
+			margin-bottom: 50px;
+			position: relative;
+			width: 90%;
+			float: right;
+			clear: right;
+			&:last-child{
+				margin-bottom:0;
+			} 
+			> {
+				.timeline-panel {
+					width: calc(100% - 50px);
+					float: right;
+					position: relative;
+					border-left: 1px solid rgba(0,0,0,.14);
+					box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+					&:after {
+						border-left-width: 0;
+						border-right-width: 10px;
+						left: -10px;
+						right: auto;
+					}
+					&:before {
+						border-left-width: 0;
+						border-right-width: 12px;
+						left: -12px;
+						right: auto;
+					}
+				}
+				.timeline-badge {
+					left: -19px;
+					&.no-icon {
+						left:-8px;
+					}
+				}
+
+			}
+			&.timeline-inverted {
+				margin-top: 0px;
+				margin-bottom: 50px;
+			}
+		}
+	}
 }

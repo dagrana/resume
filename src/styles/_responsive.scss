@@ -4,13 +4,6 @@
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : $retina-devices-breakpoint-width) {
-    app-navbar{
-        width: 100%;
-        div{
-            display: none;
-        }
-    }
-    
     .cv-section{
         .mat-card{
             width: 85%;
@@ -49,6 +42,9 @@
         .mat-card{
             width: 75%;
         }
+        .card-about {
+             padding: 50px;
+        }
     }
 }
 
@@ -85,7 +81,12 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : $small-devices-breakpoint-width) {
-    
+    app-navbar{
+        width: 100%;
+        div{
+            display: none;
+        }
+    }
 }
 
 /* Extra Small Devices, Phones */ 

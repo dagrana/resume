@@ -3,7 +3,7 @@
 @import '../../../styles/functions';
 
 
-.section-header {
+.section-about {
 //   display: flex;
 //   align-items: center;
   margin-top: 40px;
@@ -54,6 +54,10 @@
 		}
 	}
 
+	.wrap{
+		margin: 0px auto;
+		padding: 4px 16px;
+	}
 	.info-wrap {
 		margin-top: 30px;
 		h3 {

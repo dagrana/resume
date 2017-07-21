@@ -12,6 +12,7 @@ export class SectionExperienceComponent {
   getTimelineItems() {
     return [
       {
+        id: 'imatia3',
         title: 'senior programmer & team leader',
         duration: '2011 - present',
         institution: 'Imatia Innovation S.L.',
@@ -19,6 +20,7 @@ export class SectionExperienceComponent {
         description: 'Programming and developing of rich desktop and web applications'
       },
       {
+        id: 'imatia2',
         title: 'junior programmer (Research teaching staff)',
         duration: 'Mar 2010 - Dec 2010',
         institution: 'Vigo University',
@@ -26,6 +28,7 @@ export class SectionExperienceComponent {
         description: 'Programming and developing of rich desktop applications'
       },
       {
+        id: 'imatia',
         title: 'junior programmer',
         duration: 'Mar 2009 - Mar 2010',
         institution: 'Imatia Innovation S.L.',

@@ -41,3 +41,7 @@ app-navbar{
   }
 
 }
+
+.mat-sidenav-backdrop.mat-sidenav-shown {
+    background-color: rgba(0, 0, 0, 0.0);
+}

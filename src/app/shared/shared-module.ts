@@ -10,6 +10,7 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { NavBarComponent } from './navbar/navbar.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { CurriculumItems } from './cv-items/cv-items';
+import { SidenavService } from './services/sidenav.service';
 
 
 @NgModule({
@@ -22,6 +23,6 @@ import { CurriculumItems } from './cv-items/cv-items';
     ],
     declarations: [NavBarComponent, TimelineComponent],
     exports: [NavBarComponent, TimelineComponent],
-    providers: [CurriculumItems]
+    providers: [CurriculumItems, SidenavService]
 })
 export class SharedModule { }

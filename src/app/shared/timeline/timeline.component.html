@@ -1,5 +1,6 @@
 <ul class="timeline">
-        <li *ngFor="let item of getTimelineItems();let index = index" [class.timeline-inverted]="index % 2">
+        <li *ngFor="let item of getTimelineItems();let index = index" [class.timeline-inverted]="index % 2"
+          [attr.id]="item.id">
             <div class="timeline-badge">
                 <i *ngIf="item.icon !== undefined"  class="material-icons">{{item.icon}}</i>
             </div>

@@ -17,7 +17,7 @@ import { SharedModule } from './shared/shared-module';
 
 import { AppComponent } from './app.component';
 import { MainContentComponent } from './pages/main-content/main-content.component';
-import { SectionHeaderComponent } from './pages/section-header/section-header.component';
+import { SectionAboutComponent } from './pages/section-about/section-about.component';
 import { SectionListComponent } from './pages/section-list/section-list.component';
 import { SectionEducationComponent } from './pages/section-education/section-education.component';
 import { SectionExperienceComponent } from './pages/section-experience/section-experience.component';
@@ -28,7 +28,7 @@ import { routing } from './routes';
   declarations: [
     AppComponent,
     MainContentComponent,
-    SectionHeaderComponent,
+    SectionAboutComponent,
     SectionListComponent,
     SectionEducationComponent,
     SectionExperienceComponent

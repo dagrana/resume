@@ -3,6 +3,7 @@ import { Component, ViewEncapsulation, Input } from '@angular/core';
 import { CurriculumItems } from '../../shared/cv-items/cv-items';
 
 export interface TimelineItem {
+  id: string;
   title: string;
   duration?: string;
   institution?: string;

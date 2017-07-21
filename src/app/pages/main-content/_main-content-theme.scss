@@ -28,7 +28,6 @@
         &.is-selected,
         &:hover,
         &:focus {
-          background: mat-color($background, background);
           color: mat-color($primary);
         }
       }

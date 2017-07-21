@@ -1,3 +1,5 @@
+@import '../../../styles/functions';
+
 $sidenav-spacing-unit: 8px;
 $sidenav-width: 240px;
 
@@ -6,9 +8,12 @@ app-main-content {
 }
 
 .bg-struct.bg-img {
-    background: url('/assets/img/img-bg-1.jpg');
+    /*background: url('/assets/img/img-bg-1.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: cover;*/
+
+    background-image: url('/assets/img/carbon-fibre.png');
+    background-color: rgba(0,0,0,0.50);
 }
 
 .bg-struct {
@@ -18,6 +23,8 @@ app-main-content {
     left: 0;
     top: 0;
 }
+
+
 
 .main-content-viewer-sidenav-container {
   width: 100%;
@@ -33,6 +40,7 @@ app-main-content {
 
 .main-content-viewer-sidenav {
   box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
+  background-color: #272727;
   padding-bottom: 72px;
   width: $sidenav-width;
   bottom: 0;
@@ -46,18 +54,24 @@ app-main-content {
   // Section divider
   h3 {
     border: none;
-    font-size: 10px;
+    font-size: 1.1em;
     letter-spacing: 1px;
-    line-height: $sidenav-spacing-unit * 3;
-    text-transform: uppercase;
+    line-height: 24px;
+    text-transform: CAPITALIZE;
     font-weight: 400;
     margin: 0;
-    padding: 0 ($sidenav-spacing-unit * 2);
+    padding: 0 16px;
+    padding: 16px 40px;
+  }
+  h3:hover{
+    background-color: #2b2b2b;
+    transition: background-color .3s;
   }
 
   ul {
     list-style-type: none;
     margin: 0;
+    margin-bottom: 45px;
     padding: 0;
   }
 
@@ -67,27 +81,12 @@ app-main-content {
     border-bottom-style: solid;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 
 
     // Hide the border on the last item
     &:last-child {
       border-color: transparent;
-    }
-
-    > a {
-      box-sizing: border-box;
-      display: block;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: ($sidenav-spacing-unit * 6) - 1;
-      text-decoration: none;
-      transition: all .3s;
-      padding: 0 ($sidenav-spacing-unit * 2);
-      position: relative;
-
-      &.main-content-viewer-sidenav-item-selected {
-        font-weight: 600;
-      }
     }
   }
 }
@@ -102,4 +101,57 @@ app-main-content {
   router-outlet + * {
     flex-grow: 1;
   }
+}
+
+
+.candidate{
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  right: 0px;
+
+  .candidate-img {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background: url('/assets/img/avatar.jpg');
+      background-size: cover;
+      margin: 0 auto;
+      margin-bottom: 15px;
+	}
+
+  .social-icons {
+		text-align:center;
+		li {
+			display:inline-block;
+			padding:0 7px;
+			a {
+				i {
+					color:#848484 ;
+					@include transition(.3s ease);
+				}
+				&.facebook-link {
+					&:hover {
+						i {
+							color: white;
+						}
+					}
+				}
+				&.twitter-link {
+					&:hover {
+						i {
+							color: white;
+						}
+					}
+				}
+				&.linkedin-link {
+					&:hover {
+						i {
+							color: white;
+						}	
+					}
+				}
+			}
+		}
+	}
 }

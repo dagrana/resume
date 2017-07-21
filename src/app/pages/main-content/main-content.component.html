@@ -1,24 +1,38 @@
-
 <md-sidenav-container class="main-content-viewer-sidenav-container">
-  <md-sidenav #sidenav class="main-content-viewer-sidenav"
-              [opened]="false"
-              [mode]="'over'">
-    <nav *ngFor="let item of cvItems.getAllItems()">
-      <h3>{{item.name}}</h3>
-      <!--<ul>
-        <li *ngFor="let component of category.items">
-          <a [routerLink]="['/components/component/', component.id]"
-             routerLinkActive="main-content-viewer-sidenav-item-selected">
-            {{component.name}}
-          </a>
-        </li>
-      </ul>-->
-    </nav>
+  <md-sidenav #mySidenav class="main-content-viewer-sidenav" [opened]="false" [mode]="'over'">
+
+    <div>
+      <div class="candidate">
+        <div class="candidate-img"></div>
+        <ul class="social-icons">
+          <li>
+            <a class="facebook-link" href="#">
+                <i id="tt1" class="zmdi zmdi-facebook" tabindex="0"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter-link" href="#">
+                <i id="tt2" class="zmdi zmdi-twitter" tabindex="0"></i>
+            </a>
+          </li>
+          <li>
+            <a class="linkedin-link" href="#">
+                <i id="tt3" class="zmdi zmdi-linkedin" tabindex="0"></i>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li *ngFor="let item of cvItems.getAllItems()" #menuItem (click)="onItemClick(item)">
+            <h3>{{item.name}}</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
   </md-sidenav>
-  
+
   <div class="bg-struct bg-img"></div>
   <div class="main-content-sidenav-content">
-    <app-section-header></app-section-header>
+    <app-section-about></app-section-about>
     <router-outlet></router-outlet>
     <!--<app-footer></app-footer>-->
   </div>
